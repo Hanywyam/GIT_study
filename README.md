@@ -1,7 +1,95 @@
-## GIT ##
+# GIT #
+
+### 깃 사용자 정보 등록 ###
+
+`git config --global user.name "xxx1234"`<br>
+`git config --global user.email "xxx@naver.com"`<br>
+
+
+### 로컬에 저장된 정보 삭제하는 방법 ###
+
+`git config --list` <- 정보확인<br>
+`git config --unset --global user.name`<br>
+`git config --unset --global user.email`<br>
+
+​
+### 파일 명령어로 생성 ###
+
+`$ touch 파일명` ->폴더에 따로 파일 생성하지 않아도 git에서 파일 명령어로 생성 가능<br>
+
+
+### 파일 깃에 등록 ###
+
+`$ git add 파일명.확장자`( ex README.md)<br>
+`$ git add .` ->폴더 안에 변화가 있는 모든 파일 등록. 등록되지 않은 파일이 한번에 등록되는 간편함이 있다. 보통 제일 많이 씀.<br>
+
+
+### 메세지 작성과 함께 커밋 남기기 ###
+
+`$ git commit -m "파일 설명"` <= 파일 설명은 구체적으로 작성해야 하며 메세지를 작성하지 않으면 커밋이 되지 않음<br>
+`$ git commit -am "파일 설명"` <-add, commit 동시에 설정(두번째 '한번 등록된' 커밋부터 사용가능)<br>
+
+
+​### branch 만들기 ###
+
+branch -줄기, 가지. main에 새로운 브랜치 생성<br>
+`$ git branch (이름)` <- 브랜치 생성 ex: git branch dev<br>
+`$ git switch dev` <- dev 브랜치로 이동<br>
+`$ git switch main` <- main 브랜치로 이동<br>
+`$ git switch -` <- 바로 직전 브랜치로 이동. 브랜치가 너무 많으면 안먹힐때도 있음.<br>
+`$ git switch -c (이름)` <- 브랜치 생성과 함께 새로운 브랜치로 이동<br>
+​
+`$ git branch --list` 브랜치 리스트 확인<br>
+`$ git merge dev` <- 병합(합치고자)하는 브랜치로 넘어와서 명령어 입력<br>
+ex) main에 dev를 합치고싶다. ->메인에서 해당 명령어 입력<br>
+`$ git merge dev project` <- 한칸 띄워서 여러개를 같이 병합할 수 있음<br>
+​
+`$ git branch -d dev <-dev` 브랜치가 이미 원격(gitHub)에 푸쉬되고 병합 되었을때만 삭제<br>
+`$ git branch -D dev <- dev` 브랜치 강제 삭제<br>
+​
+
+### 깃허브와 로컬 연결하기 ###
+
+`$ git remote add origin https://github.com/Hanywyam/ex1.git` <-깃허브에 등록한 레파짓토리의 URL을 깃에 연결<br>
+`$ git config --list` 로 제대로 등록되었는지 remote.origin.url~로 확인할 수 있음.<br>
+`$ git push -u origin main`  <- 로컬과 온라인을 연결PUSH. 완료되면 깃허브에서 확인가능.<br>
+`$ git push` <- 브랜치 없고 메인만 있을때만 push로 간단하게 업로드 가능.<br>
+
+​
+
+### 깃허브와 로컬 연결 끊기 ###
+
+깃허브: 레파짓토리에 셋팅에서 맨 하단 [Delete this repository]클릭해서 삭제<br>
+
+로컬 저장소에 들어가서
+`$ git remote rm origin` <- 깃허브 연결 끊기(삭제)<br>
+`$ git config --list` 하면 remote로 시작하는 내용이 없는걸 확인할 수 있음.<br>
+
+​로컬은 삭제하고 싶을 때 그냥 지우면 된다. -> 휴지통~ <br>
+
+​
+
+### 마크다운 문서 작성 법 ###
+
+README.me <-마크다운 문서<br>
+
+# 큰제목 #
+
+## 부제목 ##
+
+__굵은글씨__ (언더바 두개)
+
+마크다운 문서는 깃허브에 레파짓토리의 대문으로 활용함<br>
+
+마크다운 참고 : https://github.com/tchapi/markdown-cheatsheet <br>
+​
+
+
+
+### GIT 기본 SETING ###
 
 1. 로컬 저장소 생성<br>
-`$ git init`<br>
+`$ git init` ->해당 폴더에 ".git" 폴더 생성되면 git main 저장소 생성 성공<br>
 
 2. README.md 파일 생성<br>
 `$ touch README.md`<br>
