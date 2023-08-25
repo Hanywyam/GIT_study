@@ -12,7 +12,15 @@
 `git config --unset --global user.name`<br>
 `git config --unset --global user.email`<br>
 
+
+### git 상태 확인 방법 ###
 ​
+`$ git log` <- 모든 커밋 이력 확인
+`$ git log --oneline` <- 모든 커밋 간단하게 이력 확인
+`$ git log --oneline --graph` <-이력을 그래프로 확인
+`$ git status` <- 현재 상태 확인
+
+
 ### 파일 명령어로 생성 ###
 
 `$ touch 파일명` ->폴더에 따로 파일 생성하지 않아도 git에서 파일 명령어로 생성 가능<br>
