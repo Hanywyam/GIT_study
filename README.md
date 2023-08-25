@@ -15,10 +15,10 @@
 
 ### git 상태 확인 방법 ###
 ​
-`$ git log` <- 모든 커밋 이력 확인
-`$ git log --oneline` <- 모든 커밋 간단하게 이력 확인
-`$ git log --oneline --graph` <-이력을 그래프로 확인
-`$ git status` <- 현재 상태 확인
+`$ git log` <- 모든 커밋 이력 확인<br>
+`$ git log --oneline` <- 모든 커밋 간단하게 이력 확인<br>
+`$ git log --oneline --graph` <-이력을 그래프로 확인<br>
+`$ git status` <- 현재 상태 확인<br>
 
 
 ### 파일 명령어로 생성 ###
