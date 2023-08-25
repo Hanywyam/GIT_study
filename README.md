@@ -144,25 +144,25 @@ __해결 방법__
 ### fork 연습 ###
 
 
-1. 해당 레파지토리 내 저장소로 fork
-
-(사용하던 git bash 에서 진행할때)
-`$ clear` <- 작성되어 있던 내용 모두 삭제 (내용은 그대로 남아있음)
-`$ cd ../` <- 한단계 돌아가는 명령어
-
-(폴더에서 직접 프로그램 열어 시작할때)
-`$ git clone https://fork해온 레파짓토리 URL` -> 로컬 저장소에 fork해온 온라인 저장소 저장
-`$ cd 레파짓토리 이름/` <- 이름 일부 쓰고 Tab키 누르면 자동완성. 하면 들어감
+1. 해당 레파지토리 내 저장소로 fork<br>
+2. 로컬 저장소로 복사<br>
+(사용하던 git bash 에서 진행할때)<br>
+`$ clear` <- 작성되어 있던 내용 모두 삭제 (내용은 그대로 남아있음)<br>
+`$ cd ../` <- 한단계 돌아가는 명령어<br>
+<br>
+(폴더에서 직접 프로그램 열어 시작할때)<br>
+`$ git clone https://fork해온 레파짓토리 URL` -> 로컬 저장소에 fork해온 온라인 저장소 저장<br>
+`$ cd 레파짓토리 이름/` <- 이름 일부 쓰고 Tab키 누르면 자동완성. 하면 들어감<br>
 
 ﻿
-3. forkEx1.txt 문서 생성후 fork 작업순서 작성
-`$ touch forkEx1.txt`
-생성된 파일에 내용 입력
+3. forkEx1.txt 문서 생성후 fork 작업순서 작성<br>
+`$ touch forkEx1.txt`<br>
+생성된 파일에 내용 입력<br>
 
-4.포크된 내 온라인 저장소에 업로드
-`$ git add .`
-`$ git commit -m "남기는 메세지 작성"`
-`$ git push -u origin main or master(원 주인설정에 따라)`
+4.포크된 내 온라인 저장소에 업로드<br>
+`$ git add .`<br>
+`$ git commit -m "남기는 메세지 작성"`<br>
+`$ git push -u origin main or master(원 주인설정에 따라)`<br>
 
 
 
