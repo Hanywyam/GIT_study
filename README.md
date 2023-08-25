@@ -39,7 +39,7 @@
 
 
 
-​### branch 만들기 ###
+### branch 만들기 ###
 
 branch -줄기, 가지. main에 새로운 브랜치 생성<br>
 `$ git branch (이름)` <- 브랜치 생성 ex: git branch dev<br>
